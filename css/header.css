@@ -1,0 +1,71 @@
+.header {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	height: 100vh;
+	background-color: var(--main-dark-color);
+	background: radial-gradient(
+		circle,
+		rgb(243, 243, 32),
+		rgb(10, 144, 144) 65%,
+		var(--main-dark-color) 80%
+	);
+	text-align: center;
+	padding: 20px;
+}
+
+.header__heading {
+	display: flex;
+	flex-direction: column;
+	margin-top: 25vh;
+	color: var(--main-bright-color);
+	text-shadow: 1px 1px 1px black;
+}
+
+.header__headingMain {
+	font-family: "Dancing Script", cursive;
+	font-size: 92px;
+}
+
+.header__description {
+	line-height: 1.5;
+}
+
+.header__arrow {
+	position: absolute;
+	bottom: 50px;
+	left: 50%;
+	padding: 20px;
+	transform: translateX(-50%);
+	border: 1px solid var(--main-bright-color);
+	border-radius: 50%;
+}
+
+.header__arrow::before {
+	position: absolute;
+	content: "";
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	border: 1px solid var(--main-bright-color);
+	border-radius: 50%;
+	animation: pulse 2s infinite;
+}
+
+.header__arrow-icon {
+	width: 50px;
+}
+
+@keyframes pulse {
+	from {
+		transform: scale(1);
+		opacity: 0.5;
+	}
+	to {
+		transform: scale(1.5);
+		opacity: 0.02;
+	}
+}
+
+
