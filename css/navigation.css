@@ -84,3 +84,10 @@
 .navigation__item:hover {
 	scale: 1.4;
 }
+
+@media (max-width: 400px) {
+	.navigation__item {
+		margin: 10px 0;
+		font-size: 20px;
+	}
+}
