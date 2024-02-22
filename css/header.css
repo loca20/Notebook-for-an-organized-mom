@@ -68,4 +68,17 @@
 	}
 }
 
-
+@media (max-width: 400px) {
+	.header__heading {
+		margin-top: 20vh;
+	}
+	.header__headingMain {
+		font-size: 72px;
+	}
+	.header__headingNext {
+		font-size: 26px;
+	}
+	.header__description {
+		font-size: 14px;
+	}
+}
