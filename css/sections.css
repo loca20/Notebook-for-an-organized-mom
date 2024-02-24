@@ -1,0 +1,18 @@
+.main {
+	position: relative;
+}
+
+.section {
+	position: absolute;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	width: 100%;
+	padding: 20px;
+	background-color: var(--main-dark-color);
+}
+
+.section--active {
+	z-index: 10;
+}

@@ -1,9 +1,4 @@
-.header {
-	display: flex;
-	align-items: center;
-	flex-direction: column;
-	height: 100vh;
-	background-color: var(--main-dark-color);
+.section-home {
 	background: radial-gradient(
 		circle,
 		rgb(243, 243, 32),
@@ -11,27 +6,30 @@
 		var(--main-dark-color) 80%
 	);
 	text-align: center;
-	padding: 20px;
+	z-index: 1;
 }
 
-.header__heading {
+.section-home__wrapper {
+	margin-top: -20vh;
+}
+
+.section-home__heading {
 	display: flex;
 	flex-direction: column;
-	margin-top: 25vh;
 	color: var(--main-bright-color);
 	text-shadow: 1px 1px 1px black;
 }
 
-.header__headingMain {
+.section-home__headingMain {
 	font-family: "Dancing Script", cursive;
 	font-size: 92px;
 }
 
-.header__description {
+.section-home__description {
 	line-height: 1.5;
 }
 
-.header__arrow {
+.section-home__arrow {
 	position: absolute;
 	bottom: 50px;
 	left: 50%;
@@ -41,7 +39,7 @@
 	border-radius: 50%;
 }
 
-.header__arrow::before {
+.section-home__arrow::before {
 	position: absolute;
 	content: "";
 	top: 0;
@@ -53,7 +51,7 @@
 	animation: pulse 2s infinite;
 }
 
-.header__arrow-icon {
+.section-home__arrow-icon {
 	width: 50px;
 }
 
@@ -69,16 +67,16 @@
 }
 
 @media (max-width: 400px) {
-	.header__heading {
-		margin-top: 20vh;
+	.section-home__heading {
+		margin-top: 10vh;
 	}
-	.header__headingMain {
+	.section-home__headingMain {
 		font-size: 72px;
 	}
-	.header__headingNext {
+	.section-home__headingNext {
 		font-size: 26px;
 	}
-	.header__description {
+	.section-home__description {
 		font-size: 14px;
 	}
 }

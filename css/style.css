@@ -8,8 +8,10 @@
 
 body {
 	font-family: "Nunito", sans-serif;
-	background-color: var(--main-dark-color);
+	background-color: #fff;
 	font-size: 16px;
+	position: relative;
+	background-color: var(--main-dark-color);
 }
 
 .wrapper {
