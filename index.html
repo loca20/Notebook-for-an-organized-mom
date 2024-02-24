@@ -14,6 +14,8 @@
   <link rel="stylesheet" href="./css/colors.css">
   <link rel="stylesheet" href="./css/navigation.css">
   <link rel="stylesheet" href="./css/header.css">
+  <link rel="stylesheet" href="./css/section.css">
+  <link rel="stylesheet" href="./css/form.css">
   <script defer src="./js/script.js"></script>
 </head>
 
@@ -36,8 +38,8 @@
 
   <header class="header">
     <div class="wrapper">
-      <h1 class="header__heading"><span class="header__headingMain">Notatnik</span><span
-          class="header__headingNext"> zorganizowanej mamy</span></h1>
+      <h1 class="header__heading"><span class="header__headingMain">Notatnik</span><span class="header__headingNext">
+          zorganizowanej mamy</span></h1>
       <p class="header__description">W tym notatniku gdy dodasz godziny zaśnięcia i pobudki Twojego dziecka, obliczysz
         ilość przespanych godzin. Zapiszesz ilość drzemek oraz oznaczysz nastrój swojego dziecka.</p>
       <a href="#about_baby">
@@ -47,7 +49,45 @@
       </a>
     </div>
   </header>
+  <main>
+    <section class="section">
+      <div class="wrapper">
+        <form class="form form1">
+          <fieldset class="form__fieldset">
+            <legend class="form__legend">Dane dziecka</legend>
+            <div class="form__part form__part--withRadio">
+              <p class="form__label">
+                <span class="form__labelText">Wybierz płeć dziecka: </span>
+              </p>
+              <ul class="form__listWithRadio">
+                <li><label class="form__label form__label--withRadio">
+                    <input class="form__input form__input--radio" name="gender" value="boy" type="radio">
+                    chłopiec
+                  </label>
+                </li>
+                <li><label class="form__label form__label--withRadio">
+                    <input class="form__input form__input--radio" name="gender" value="girl" type="radio">dziewczynka
+                  </label></li>
+              </ul>
+            </div>
 
+            <p class="form__part">
+              <label class="form__label">
+                <span class="form__labelText">Imię dziecka: </span>
+                <input class="form__input" type="text" name="name"></label>
+            </p>
+            <p class="form__part">
+              <label class="form__label">
+                <span class="form__labelText">Data urodzenia dziecka: </span>
+                <input class="form__input" type="text" name="date">
+              </label>
+            </p>
+          </fieldset>
+          <button class="form__button">Zapisz dane</button>
+        </form>
+      </div>
+    </section>
+  </main>
 </body>
 
 </html>
