@@ -13,9 +13,9 @@
   <link rel="stylesheet" href="./css/style.css">
   <link rel="stylesheet" href="./css/colors.css">
   <link rel="stylesheet" href="./css/navigation.css">
-  <link rel="stylesheet" href="./css/sectionHome.css">
-  <link rel="stylesheet" href="./css/sectionAboutBaby.css">
   <link rel="stylesheet" href="./css/sections.css">
+  <link rel="stylesheet" href="./css/sectionHome.css">
+  <link rel="stylesheet" href="./css/form.css">
   <script defer src="./js/script.js"></script>
 </head>
 
@@ -89,6 +89,32 @@
             <button class="form__button">Zapisz</button>
           </div>
         </form>
+      </div>
+    </section>
+
+    <section class="section section-add-notes js-section" id="add-notes">
+      <div class="wrapper">
+        <form class="form form2">
+          <fieldset class="form__fieldset">
+              <legend class="form__legend">Ilość godzin snu</legend>
+              <p class="form__part">
+                  <label class="form__label">
+                      <span class="form__labelText">Godzina zaśnięcia: </span>
+                      <input class="form__input" type="text" name="start">
+                  </label>
+              </p>
+              <p class="form__part">
+                  <label class="form__label">
+                      <span class="form__labelText">Godzina pobudki: </span>
+                      <input class="form__input" type="text" name="end">
+                  </label>
+              </p>
+          </fieldset>
+          <div class="form__buttons">
+            <button class="form__button">Wyczyść</button>
+            <button class="form__button">Zapisz</button>
+          </div>
+      </form>
       </div>
     </section>
   </main>
