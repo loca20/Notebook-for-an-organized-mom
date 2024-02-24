@@ -10,12 +10,12 @@
     integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
   <title>Notebook for an organized mom</title>
-  <link rel="stylesheet" href="./css/main.css">
+  <link rel="stylesheet" href="./css/style.css">
   <link rel="stylesheet" href="./css/colors.css">
   <link rel="stylesheet" href="./css/navigation.css">
-  <link rel="stylesheet" href="./css/header.css">
-  <link rel="stylesheet" href="./css/section.css">
-  <link rel="stylesheet" href="./css/form.css">
+  <link rel="stylesheet" href="./css/sectionHome.css">
+  <link rel="stylesheet" href="./css/sectionAboutBaby.css">
+  <link rel="stylesheet" href="./css/sections.css">
   <script defer src="./js/script.js"></script>
 </head>
 
@@ -36,22 +36,23 @@
     </div>
   </nav>
 
-  <header class="header" id="home">
-    <div class="wrapper">
-      <h1 class="header__heading"><span class="header__headingMain">Notatnik</span><span class="header__headingNext">
-          zorganizowanej mamy</span></h1>
-      <p class="header__description">W tym notatniku gdy dodasz godziny zaśnięcia i pobudki Twojego dziecka, obliczysz
-        ilość przespanych godzin. Zapiszesz ilość drzemek oraz oznaczysz nastrój swojego dziecka.</p>
-      <a href="#about_baby">
-        <div class="header__arrow">
-          <img class="header__arrow-icon" src="img/arrow-down.svg" alt="">
-        </div>
-      </a>
-    </div>
-  </header>
+  <main class="main">
+    <section class=" section section-home js-section" id="home">
+      <div class="wrapper section-home__wrapper">
+        <h1 class="section-home__heading"><span class="section-home__headingMain">Notatnik</span><span
+            class="section-home__headingNext">
+            zorganizowanej mamy</span></h1>
+        <p class="section-home__description">W tym notatniku gdy dodasz godziny zaśnięcia i pobudki Twojego dziecka, obliczysz
+          ilość przespanych godzin. Zapiszesz ilość drzemek oraz oznaczysz nastrój swojego dziecka.</p>
+        <a href="">
+          <div class="section-home__arrow">
+            <img class="section-home__arrow-icon" src="img/arrow-down.svg" alt="">
+          </div>
+        </a>
+      </div>
+    </section>
 
-  <main>
-    <section class="section js-section" id="about-baby">
+    <section class="section section-about-baby js-section" id="about-baby">
       <div class="wrapper">
         <form class="form form1">
           <fieldset class="form__fieldset">
@@ -71,7 +72,6 @@
                   </label></li>
               </ul>
             </div>
-
             <p class="form__part">
               <label class="form__label">
                 <span class="form__labelText">Imię dziecka: </span>
