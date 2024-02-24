@@ -28,15 +28,15 @@
 
   <nav class="navigation js-navigation">
     <div class="navigation__items">
-      <a href="./index.html" class="navigation__item js-navigation__item">Strona główna</a>
-      <a href="./about-baby.html" class="navigation__item js-navigation__item">Dane dziecka</a>
-      <a href="./add-notes.html" class="navigation__item js-navigation__item">Dodaj notatki</a>
-      <a href="./calendar.html" class="navigation__item js-navigation__item">Kalendarz</a>
-      <a href="./settings.html" class="navigation__item js-navigation__item">Ustawienia</a>
+      <a href="#home" class="navigation__item js-navigation__item">Strona główna</a>
+      <a href="#about-baby" class="navigation__item js-navigation__item">Dane dziecka</a>
+      <a href="#add-notes" class="navigation__item js-navigation__item">Dodaj notatki</a>
+      <a href="#calendar" class="navigation__item js-navigation__item">Kalendarz</a>
+      <a href="#settings" class="navigation__item js-navigation__item">Ustawienia</a>
     </div>
   </nav>
 
-  <header class="header">
+  <header class="header" id="home">
     <div class="wrapper">
       <h1 class="header__heading"><span class="header__headingMain">Notatnik</span><span class="header__headingNext">
           zorganizowanej mamy</span></h1>
@@ -49,6 +49,46 @@
       </a>
     </div>
   </header>
+
+  <main>
+    <section class="section js-section" id="about-baby">
+      <div class="wrapper">
+        <form class="form form1">
+          <fieldset class="form__fieldset">
+            <legend class="form__legend">Dane dziecka</legend>
+            <div class="form__part form__part--withRadio">
+              <p class="form__label">
+                <span class="form__labelText">Wybierz płeć dziecka: </span>
+              </p>
+              <ul class="form__listWithRadio">
+                <li><label class="form__label form__label--withRadio">
+                    <input class="form__input form__input--radio" name="gender" value="boy" type="radio">
+                    chłopiec
+                  </label>
+                </li>
+                <li><label class="form__label form__label--withRadio">
+                    <input class="form__input form__input--radio" name="gender" value="girl" type="radio">dziewczynka
+                  </label></li>
+              </ul>
+            </div>
+
+            <p class="form__part">
+              <label class="form__label">
+                <span class="form__labelText">Imię dziecka: </span>
+                <input class="form__input" type="text" name="name"></label>
+            </p>
+            <p class="form__part">
+              <label class="form__label">
+                <span class="form__labelText">Data urodzenia dziecka: </span>
+                <input class="form__input" type="text" name="date">
+              </label>
+            </p>
+          </fieldset>
+          <button class="form__button">Zapisz dane</button>
+        </form>
+      </div>
+    </section>
+  </main>
 
 </body>
 
