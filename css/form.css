@@ -56,6 +56,26 @@
 	padding: 8px 16px;
 	border: 1px solid var(--main-border-color);
 	border-radius: 5px;
+	outline: none;
+}
+
+.form__input:focus {
+	box-shadow: 0 0 0 1px var(--main-dark-color);
+	border: 1px solid var(--main-dark-color);
+}
+
+.form__input--radio {
+	appearance: none;
+	min-width: 10px;
+	padding: 6px;
+	margin: 16px;
+	border-radius: 50%;
+}
+
+.form__input--radio:checked {
+	box-shadow: 0 0 0 1px var(--main-dark-color), inset 0 0 0 3px var(--main-bright-color);
+	border: 1px solid var(--main-dark-color);
+	background-color: var(--main-dark-color);
 }
 
 .form__buttons {
@@ -71,7 +91,7 @@
 	letter-spacing: 1.5px;
 	color: aliceblue;
 	background-color: var(--main-dark-color);
-	border: 1px solid var(--main-border-color);
+	border: none;
 	border-radius: 5px;
 	cursor: pointer;
 }
@@ -79,7 +99,7 @@
 @media (max-width: 620px) {
 	.form__part--withRadio {
 		flex-direction: column;
-		padding-bottom: 6px;
+		padding-bottom: 0;
 	}
 
 	.form__listWithRadio {
@@ -102,11 +122,6 @@
 	.form__input {
 		width: 100%;
 	}
-
-	.form__input--radio {
-		margin-right: 4px;
-		min-width: 16px;
-	}
 }
 
 @media (max-width: 400px) {
@@ -119,12 +134,13 @@
 	}
 
 	.form__labelText {
-		margin: 2px;
+		margin: 8px;
 		font-size: 14px;
 	}
 
 	.form__label--withRadio {
 		font-size: 14px;
+		height: 32px;
 	}
 
 	.form__listWithRadio {
