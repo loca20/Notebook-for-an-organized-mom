@@ -45,3 +45,16 @@
 		opacity: 0.02;
 	}
 }
+
+@media (max-width: 620px) {
+	.arrow-icon {
+		width: 30px;
+	}
+}
+
+@media (max-width: 400px) {
+	.arrow {
+		bottom: 20px;
+		padding: 10px;
+	}
+}
