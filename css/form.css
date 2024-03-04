@@ -74,7 +74,8 @@
 }
 
 .form__input--radio:checked {
-	box-shadow: 0 0 0 1px var(--main-dark-color), inset 0 0 0 3px var(--main-bright-color);
+	box-shadow: 0 0 0 1px var(--main-dark-color),
+		inset 0 0 0 3px var(--main-bright-color);
 	border: 1px solid var(--main-dark-color);
 	background-color: var(--main-dark-color);
 }
@@ -90,11 +91,18 @@
 	width: 140px;
 	font-weight: bold;
 	letter-spacing: 1.5px;
-	color: aliceblue;
+	color: var(--main-bright-color);
 	background-color: var(--main-dark-color);
 	border: none;
 	border-radius: 5px;
 	cursor: pointer;
+	transition: background-color 0.6s, box-shadow 0.6s;
+}
+
+.form__button:hover {
+	padding: 8px;
+	background-color: var(--main-navigation-color);
+	box-shadow: 0 0 4px 1px rgb(28, 28, 28);
 }
 
 @media (max-width: 620px) {
