@@ -102,7 +102,7 @@
 .form__button:hover {
 	padding: 8px;
 	background-color: var(--main-navigation-color);
-	box-shadow: 0 0 4px 1px rgb(28, 28, 28);
+	box-shadow: 0 0 4px 1px rgb(28, 28, 28) inset;
 }
 
 @media (max-width: 620px) {
