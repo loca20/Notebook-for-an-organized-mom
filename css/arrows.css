@@ -25,7 +25,7 @@
 
 .arrow-down:hover::before {
 	box-shadow: 0 0 8px 2px var(--main-bright-color);
-	animation: none;;
+	animation: none;
 }
 
 .arrow-icon {
