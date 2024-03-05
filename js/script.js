@@ -7,6 +7,15 @@ const allArrowsLeft = document.querySelectorAll(".js-arrow-left");
 const allArrowsRight = document.querySelectorAll(".js-arrow-right");
 const sectionAboutBaby = document.querySelector(".js-section-about-baby");
 const forms = document.querySelectorAll(".js-form");
+const buttonSaveAboutBaby = document.querySelector(
+	".js-form__button-save-about-baby"
+);
+const allRadioInputs = document.querySelectorAll(".js-form__input--radio");
+const allInputsAboutBaby = document.querySelectorAll(
+	".js-form__input-about-baby"
+);
+const dataAboutBabySaved = document.querySelector(".js-data-saved-about-baby");
+const labelsTextRadio = document.querySelector(".js-form__labelText--radio");
 
 const toggleNavigation = () => {
 	navigation.classList.toggle("navigation--active");
@@ -56,6 +65,27 @@ const showPreviousSection = () => {
 		});
 	});
 };
+
+const saveDataAboutBaby = () => {
+	const isAnyRadioChecked = Array.from(allRadioInputs).some(
+		(radioInput) => radioInput.checked
+	);
+
+	const areEveryInputFilled = Array.from(allInputsAboutBaby).every(
+		(inputAboutBaby) => inputAboutBaby.value.trim() !== ""
+	);
+
+	if (isAnyRadioChecked === true && areEveryInputFilled === true) {
+		dataAboutBabySaved.innerText = "Dane zostały zapisane";
+	} else if (isAnyRadioChecked === false) {
+		labelsTextRadio.classList.add("unfilled");
+	}
+};
+
+const clearErrors = () => {
+	labelsTextRadio.classList.remove("unfilled");
+};
+
 const showActiveSection = () => {
 	showSelectedSection();
 	showNextSection();
@@ -78,3 +108,7 @@ burgerButton.addEventListener("click", toggleNavigation);
 showActiveSection();
 arrowDown.addEventListener("click", arrowDownAction);
 blockSendForm();
+buttonSaveAboutBaby.addEventListener("click", saveDataAboutBaby);
+allRadioInputs.forEach((radioInput) => {
+	radioInput.addEventListener("change", clearErrors);
+});
