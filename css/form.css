@@ -105,6 +105,20 @@
 	box-shadow: 0 0 4px 1px rgb(28, 28, 28) inset;
 }
 
+.unfilled {
+	color: red;
+	animation: flashingText 3s infinite;
+}
+
+@keyframes flashingText {
+	0% {
+		font-weight: bold;
+	}
+	50% {
+		font-weight: bold;
+	}
+}
+
 @media (max-width: 620px) {
 	.form {
 		margin-top: -80px;
