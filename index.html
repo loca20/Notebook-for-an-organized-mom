@@ -62,37 +62,37 @@
             <legend class="form__legend">Dane dziecka</legend>
             <div class="form__part form__part--withRadio">
               <p class="form__label">
-                <span class="form__labelText">Wybierz płeć dziecka: </span>
+                <span class="form__labelText js-form__labelText--radio">Wybierz płeć dziecka: </span>
               </p>
               <ul class="form__listWithRadio">
                 <li><label class="form__label form__label--withRadio">
-                    <input class="form__input form__input--radio" name="gender" value="boy" type="radio">
+                    <input class="form__input form__input--radio js-form__input--radio" name="gender" value="boy" type="radio">
                     chłopiec
                   </label>
                 </li>
                 <li><label class="form__label form__label--withRadio">
-                    <input class="form__input form__input--radio" name="gender" value="girl" type="radio">dziewczynka
+                    <input class="form__input form__input--radio js-form__input--radio" name="gender" value="girl" type="radio">dziewczynka
                   </label></li>
               </ul>
             </div>
             <p class="form__part">
               <label class="form__label">
                 <span class="form__labelText">Imię dziecka: </span>
-                <input class="form__input" type="text" name="name" placeholder="Wpisz imię dziecka"></label>
+                <input class="form__input js-form__input-about-baby" type="text" name="name" placeholder="Wpisz imię dziecka"></label>
             </p>
             <p class="form__part">
               <label class="form__label">
                 <span class="form__labelText">Data urodzenia dziecka: </span>
-                <input class="form__input" type="date" name="date">
+                <input class="form__input js-form__input-about-baby" type="date" name="date">
               </label>
             </p>
           </fieldset>
           <div class="form__buttons">
             <button class="form__button js-form__button-clear" type="reset">Wyczyść</button>
-            <button class="form__button js-form__button-save">Zapisz</button>
+            <button class="form__button js-form__button-save-about-baby">Zapisz</button>
           </div>
         </form>
-        <p class="data-saved"></p>
+        <p class="data-saved js-data-saved-about-baby"></p>
         <a href="#home">
           <div class="arrow arrow-left js-arrow-left">
             <img class="arrow-icon" src="img/arrow-left.svg" alt="">
@@ -125,8 +125,8 @@
               </p>
           </fieldset>
           <div class="form__buttons">
-            <button class="form__button" type="reset">Wyczyść</button>
-            <button class="form__button">Zapisz</button>
+            <button class="form__button js-form__button-clear" type="reset">Wyczyść</button>
+            <button class="form__button js-form__button-save-add-notes">Zapisz</button>
           </div>
       </form>
       <p class="data-saved"></p>
